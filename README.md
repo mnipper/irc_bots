@@ -48,23 +48,25 @@ gem install cinch
 gem install open-uri
 ```
 
-You also are required to provide the necessary credentials to access the server in a creds.rb file.  The creds.rb should ahve the following format:
+You also are required to provide the necessary credentials to access the server in a creds.rb file in the project root direction.  The creds.rb should ahve the following format:
 
-### class Creds 
-###   def self.server 
-###     "irc server location" 
-###   end 
+```
+class Creds 
+  def self.server 
+    "irc server location" 
+  end 
 
-###   def self.nick 
-###      "bot_nick" 
-###   end 
+  def self.nick 
+     "bot_nick" 
+  end 
 
-###   def self.password 
-###     "password" 
-###   end 
+  def self.password 
+    "password" 
+  end 
 
-###   def self.channels 
-###     ["#channel1", "#channel2"] 
-###   end 
+  def self.channels 
+    ["#channel1", "#channel2"] 
+  end 
 
-### end
+end
+```
