@@ -37,7 +37,7 @@ Return the first defintion of a word or phrase from Urban Dictionary.
 
 Installation
 ------------
-The following are required for running irc_bots:
+The following are required for running irc_bots (Ubuntu/Debian):
 
 ```
 sudo apt-get install ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8
@@ -45,7 +45,6 @@ sudo apt-get install libreadline-ruby1.8 libruby1.8 libopenssl-ruby
 sudo apt-get install libxslt-dev libxm12-dev
 gem install nokogiri
 gem install cinch
-gem install open-uri
 ```
 
 You also are required to provide the necessary credentials to access the server in a creds.rb file in the project root direction.  The creds.rb should ahve the following format:
