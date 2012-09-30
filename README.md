@@ -47,7 +47,7 @@ gem install nokogiri
 gem install cinch
 ```
 
-You also are required to provide the necessary credentials to access the server in a creds.rb file in the project root direction.  The creds.rb should ahve the following format:
+You also are required to provide the necessary credentials to access the server in a creds.rb file in the project root directory.  The creds.rb should have the following format:
 
 ```
 class Creds 
@@ -66,6 +66,5 @@ class Creds
   def self.channels 
     ["#channel1", "#channel2"] 
   end 
-
 end
 ```
