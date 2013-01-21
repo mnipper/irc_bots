@@ -14,6 +14,8 @@ class HelpBot
       m.reply("!cowsay [something] - Make a cow say something!")
       m.reply("!beavis [something] - Make beavis say something!")
       m.reply("!roulette - Play russian roulette!")
+      m.reply("!reddit r/[subreddit] - Top five posts in a subreddit")
+      m.reply("!reddit search r/[subreddit] - Search top posts in subreddit")
     end
 
 end

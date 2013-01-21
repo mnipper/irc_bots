@@ -14,7 +14,7 @@ class SlapBot
 
     def slap(m, name)
       if name != bot.nick && m.channel.has_user?(name)
-        @slaps.has_key?(name.downcase) ? @slaps[name.downcase] -= 10 : @slaps[name.downcase] = 90
+        slap_user(name)
         m.reply("** slaps #{name} **")
         m.reply("** #{name}'s health is #{@slaps[name.downcase]} **")
         if @slaps[name.downcase] <= 0
@@ -22,6 +22,10 @@ class SlapBot
           @slaps.delete(name.downcase)
         end
       end
+    end
+
+    def slap_user(name)
+      @slaps.has_key?(name.downcase) ? @slaps[name.downcase] -= 10 : @slaps[name.downcase] = 90
     end
 
     def heal(m, name)
