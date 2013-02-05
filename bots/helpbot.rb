@@ -15,7 +15,10 @@ class HelpBot
       m.reply("!beavis [something] - Make beavis say something!")
       m.reply("!roulette - Play russian roulette!")
       m.reply("!reddit r/[subreddit] - Top five posts in a subreddit")
-      m.reply("!reddit search r/[subreddit] - Search top posts in subreddit")
+      m.reply("!reddit search r/[subreddit] [regex] - Search top posts in subreddit for regex")
+      m.reply("!seen [user] - Last time I saw a user")
+      m.reply("!timebomb [user] - Stuff a timebomb down someone's pants")
+      m.reply("!cutwire [wire] - cut a wire if you are timebombed")
     end
 
 end
